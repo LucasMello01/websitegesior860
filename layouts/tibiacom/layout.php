@@ -6,7 +6,7 @@ function anti_injection($sql)
 { 
 // remove palavras que contenham sintaxe sql 
 $sql = preg_replace(sql_regcase("/(from|select|insert|delete|where|drop table|show tables|#|\*|--|\\\\)/"),"",$sql); 
-$sql = trim($sql);//limpa espaços vazio 
+$sql = trim($sql);//limpa espaÃ§os vazio 
 $sql = strip_tags($sql);//tira tags html e php 
 $sql = addslashes($sql);//Adiciona barras invertidas a uma string 
 return $sql; 
@@ -510,7 +510,7 @@ $time = $time_end - $time_start;
         </div>
         <div id="ThemeboxesColumn">
           <div id="RightArtwork">
-            <img id="Monster" src="images/monsters/<?PHP echo logo_monster() ?>.gif" onClick="window.location = '?subtopic=creatures&amp;creature=<?PHP echo logo_monster() ?>';" alt="Monster of the Week" style="height:56px; width:65px; margin-top:15px;" />
+            <img id="Monster" src="monsters/<?PHP echo logo_monster() ?>.gif" onClick="window.location = '?subtopic=creatures&amp;creature=<?PHP echo logo_monster() ?>';" alt="Monster of the Week" style="height:56px; width:65px; margin-top:15px;" />
             <img id="PedestalAndOnline" src="<?PHP echo $layout_name; ?>/images/header/pedestal-and-online.gif" alt="Monster Pedestal and Players Online Box"/>
 		  <?PHP
 		  if(count($config['site']['worlds']) > 1)
@@ -540,33 +540,7 @@ $time = $time_end - $time_start;
     </div>
     <div class="Bottom" style="background-image:url(<?PHP echo $layout_name; ?>/images/general/box-bottom.gif);"></div>
   </div>
-<?PHP
-if($config['site']['screenoftheday'] == 1) 
-echo '<div id="ScreenshotBox" class="Themebox" style="background-image:url('.$layout_name.'/images/themeboxes/screenshot/screenshotbox.gif);">
-      <a href="?subtopic=serverinfo" >
-        <img id="ScreenshotContent" class="ThemeboxContent" src="images/screenshotoftheday.gif" alt="Server Info" /></a>
-    <div class="Bottom" style="background-image:url('.$layout_name.'/images/general/box-bottom.gif);"></div>
-    </div>';
-if($config['site']['warcastleads'] == 1)
-echo '<div id="CurrentPollBox" class="Themebox" style="background-image:url('.$layout_name.'/images/themeboxes/warcastle.gif);">
-    <div class="Bottom" style="background-image:url('.$layout_name.'/images/general/box-bottom.gif);"></div>
-    </div>';
-	?>
 
-<?PHP
-$time = time();
-$viewpoll = $SQL->query('SELECT * FROM z_polls where end > '.$time.' ORDER BY id DESC LIMIT 1');
-foreach($viewpoll as $p)
-$polls .= '<center>'.$p['question'].'</center>';
-    if(count($p['id']) > 0)
-     echo '<div id="CurrentPollBox" class="Themebox" style="background-image:url('.$layout_name.'/images/themeboxes/current-poll/currentpollbox.gif);">
-      <div id="CurrentPollText">'.$polls.'</div>
-      <a class="ThemeboxButton" href="?subtopic=polls&id= '.$p['id'].'" onMouseOver="MouseOverBigButton(this);" onMouseOut="MouseOutBigButton(this);" style="background-image:url('.$layout_name.'/images/buttons/sbutton.gif);"><div class="BigButtonOver" style="background-image:url('.$layout_name.'/images/buttons/sbutton_over.gif);"></div>
-        <div class="ButtonText" style="background-image:url('.$layout_name.'/images/buttons/_sbutton_votenow.gif);"></div>
-      </a>
-    <div class="Bottom" style="background-image:url('.$layout_name.'/images/general/box-bottom.gif);"></div>
-    </div>';
-?>
 <?PHP
 if($group_id_of_acc_logged >= $config['site']['access_admin_panel']) 
 echo '<div id="CurrentPollBox" class="Themebox" style="background-image:url('.$layout_name.'/images/themeboxes/admin/admin.gif);">
