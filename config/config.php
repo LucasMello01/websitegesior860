@@ -91,8 +91,8 @@ $config['site']['smtp_user'] = "punchemails@googlemail.com"; // login
 $config['site']['smtp_pass'] = "[blablablabla]"; // password
 
 // ACC MAKER OPTIONS config
-$config['site']['access_news'] = 5; // access level needed to edit news
-$config['site']['access_admin_panel'] = 4; // access level needed to open admin panel
+$config['site']['access_news'] = 6; // access level needed to edit news
+$config['site']['access_admin_panel'] = 6; // access level needed to open admin panel
 $config['site']['news_big_limit'] = 4; // limit of news on latest news page
 $config['site']['news_ticks_limit'] = 5; // limit of ticker news on latest news page
 $config['site']['show_creationdate'] = 1; // show date of character creation 1 = yes, 0 = no (when use Search Player)
@@ -107,12 +107,9 @@ $config['site']['gallery_page'] = 1; // show gallery page? 1 = yes, 0 = no
 $config['site']['email_lai_sec_interval'] = 180; // time in seconds between e-mails to one account from lost account interface, block spam
 $config['site']['show_marriage_info'] = 0; // show marriage, 1 = yes, 0 = no
 $config['site']['show_skills_info'] = 0;//show players skills, 1 = yes, 0 = no
-$config['site']['show_Vip_status'] = 0;// show Vip status, 1 = yes, 0 = no
-$config['site']['show_Vip_storage'] = 0;// the storage of Vip
 $config['site']['show_outfit'] = 1;// show outfit, 1 = yes, 0 = no
 $config['site']['show_signature'] = 0;// show signature, 1 = yes, 0 = no
 $config['site']['screenoftheday'] = 1;// show screenshot of the day
-$config['site']['warcastleads'] = 0;// mostrar ADS da War Castle
 $config['site']['worldtransfer'] = 0;//1-Enable/0-Disable Character World Transfer
 $config['site']['worldtransferprice'] = 10;//Price for Character World Transfer
 $config['site']['transfermonths'] = 6;//Months for which you cannot make World Transfer with a character
