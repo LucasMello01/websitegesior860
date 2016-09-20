@@ -50,11 +50,8 @@ $config['site']['send_register_email'] = 0; // send e-mail when register account
 // CHARACTER config, format: ID_of_vocation => 'Name of Character to copy', load vocation name from $vocation_name[0] (below)
 $config['site']['newchar_vocations'][0] = array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
 $config['site']['newchar_vocations'][1] = array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
-// sample, if rook only:             $config['site']['newchar_vocations'][0] = array(0 => 'Rook Sample');
-$config['site']['newchar_towns'][0] = array(2);
-$config['site']['newchar_towns'][1] = array(2);
-// sample, if all players should spawn in one city (city with ID 4):    uncoment!!
-//$config['site']['newchar_towns'] = array(2);
+$config['site']['newchar_towns'][0] = array(2); // Baiak = 1 = baiakcity / Global = 2 = thais
+$config['site']['newchar_towns'][1] = array(2); // Baiak = 1 = baiakcity / Global = 2 = thais
 
 // list of vocations on ots (world 0)
 $vocation_name[0][0] = array(0 => 'None', 1 => 'Sorcerer', 2 => 'Druid', 3 => 'Paladin', 4 => 'Knight'); // id => 'name' , $vocation_name[0] - promotion level 0, $vocation_name[0] - for world ID 0
