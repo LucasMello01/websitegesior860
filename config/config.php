@@ -18,6 +18,18 @@ $config['site']['verify_code'] = 0; // show verify code to block stupid scripts,
 $config['site']['email_days_to_change'] = 2; // how many days user need to change e-mail to account - block hackers
 $config['site']['newaccount_premdays'] = 0; // how many days receive new account
 
+//Configuracao de Plataforma de Pagamento
+$config['site']['pagseguro_status'] = "true"; // forma de pagamento ativado = true / desativado = false
+$config['site']['banco_status'] = "true"; // forma de pagamento ativado = true / desativado = false
+
+$config['site']['pagseguro_email'] = "pagseguro@gmail.com"; // Email pagseguro
+
+$config['site']['banco_nome'] = "--"; // Nome do banco
+$config['site']['banco_titular'] = "--"; // Nome do titular da conta
+$config['site']['banco_conta'] = "--"; // Numero da conta
+$config['site']['banco_agencia'] = "--"; // Agencia
+$config['site']['banco_operacao'] = "--"; // Operacao e tipo de conta
+
 //Forum
 $config['site']['forum_sections'] = array(1 => 'News', 2 => 'Staff Complaints', 3 => 'Tutorials', 4 => 'Pictures', 5 => 'Bug Report', 6 => 'Miscellaneous', 7 => 'Trade');
 $config['site']['forum_sections_desc'] = array(1 => 'Here you can comment on the news.', 2 => 'Here you can report complaints about Staff Members.', 3 => 'Here you will find tutorials on things.', 4 => 'This board is all about pictures!', 5 => 'Report bugs in this forum.', 6 => 'Anything that doesn\'t already have a designated forum.', 7 => 'Buy and sell things.');
