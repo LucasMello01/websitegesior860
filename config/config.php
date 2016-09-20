@@ -6,6 +6,7 @@ $config['site']['allowed_titles'] = array();
 $config['site']['server_ip'] = 'change in config.php';
 $config['site']['server_port'] = '7171';
 $config['site']['server_version'] = '8.60';
+$config['site']['server_description'] = 'Nosso servidor busca inovar e ter a melhor qualidade para proporcionar a diversao de voces players. ';
 
 //Worlds
 $config['site']['worlds'] = array(0 => 'SEUOT');
