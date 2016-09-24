@@ -91,11 +91,6 @@ if($list == "experience")
 $main_content .= '</TR><TR>';
 foreach($skills as $skill)  
 {
-	if($config['site']['show_flag'])
-	{
-		$account = $SQL->query('SELECT * FROM accounts WHERE id = '.$skill['account_id'].'')->fetch();
-		$flag = '<image src="http://images.boardhost.com/flags/'.$account['flag'].'.png"/> ';
-	}
 	if($number_of_rows < 100) 
 	{
 		if($list == "magic") 
@@ -105,7 +100,7 @@ foreach($skills as $skill)
 		if(!is_int($number_of_rows / 2)) { $bgcolor = $config['site']['darkborder']; } else { $bgcolor = $config['site']['lightborder']; } $number_of_rows++;
 		$main_content .= '<tr bgcolor="'.$bgcolor.'">
 			<td>'.($offset + $number_of_rows).'.</td>
-			<td>'.$flag.'<a href="index.php?subtopic=characters&name='.urlencode($skill['name']).'">'.$skill['name'].'</a>';
+			<td><a href="index.php?subtopic=characters&name='.urlencode($skill['name']).'">'.$skill['name'].'</a>';
 			if($config['site']['showMoreInfo'])
 				$main_content .= '<br><small>Level: '.$skill['level'].', '.$vocation_name[$skill['world_id']][$skill['promotion']][$skill['vocation']];
 				if(count($config['site']['worlds']) > 1)
