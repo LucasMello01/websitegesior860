@@ -39,7 +39,7 @@ $config['site']['send_register_email'] = 0; // send e-mail when register account
 $config['site']['newchar_vocations'][0] = array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
 $config['site']['newchar_vocations'][1] = array(1 => 'Sorcerer Sample', 2 => 'Druid Sample', 3 => 'Paladin Sample', 4 => 'Knight Sample');
 // sample, if rook only:             $config['site']['newchar_vocations'][0] = array(0 => 'Rook Sample');
-$config['site']['newchar_towns'][0] = array(2);
+$config['site']['newchar_towns'][0] = array(1);
 $config['site']['newchar_towns'][1] = array(2);
 // sample, if all players should spawn in one city (city with ID 4):    uncoment!!
 //$config['site']['newchar_towns'] = array(2);
