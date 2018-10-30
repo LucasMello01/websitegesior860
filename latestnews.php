@@ -208,9 +208,9 @@ $news_content .= '
 				<img src="'.$layout_name.'/images/news/features.jpg" width="150" height="100" border="2" alt="" align="right" hspace="10" /></div>
                 <div id=\'TeaserText\'>
                     <div style="position: relative; top: -2px; margin-bottom: 2px;" >
-                        <b>IP:</b> '.$config['site']['server_ip'].' / <b>Client:</b> '.$config['site']['server_version'].' / <b>Port:</b> '.$config['site']['server_port'].'<br/><br/>
+                        <b>IP:</b> EDIT IN LATESTNEWS.PHP / <b>Client:</b> 8.60 / <b>Port:</b> 7171<br/><br/>
                     </div>
-					'.$config['site']['server_description'].'
+					Nosso servidor busca inovar e ter a melhor qualidade para proporcionar a diversao de voces players.
                    <br/><br/>
                   <b>Ajude-nos a dar continuidade ao servidor <a href="?subtopic=buypoints">Clicando aqui</a>!</b></i>
                 </div>
@@ -329,4 +329,5 @@ foreach ($zapytanie as $row)
 }
 
 ?>
+
 
